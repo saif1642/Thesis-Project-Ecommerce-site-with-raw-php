@@ -1,0 +1,113 @@
+div#popular.row{
+  text-align:center;
+  font-size:30px;
+  border:1px solid;
+  border-color:rgb(196,210,218);
+  padding:10px;
+}
+
+@media (max-width:1199px) {
+  div#categories.container{
+    max-width:400px;
+    margin-left:600px;
+  }
+}
+
+div#topcat{
+  margin-top:200px;
+  max-width:400px;
+}
+
+div#citiesdiv{
+  text-align:right;
+  margin-top:70px;
+}
+
+div#divisionsdiv{
+  text-align:right;
+}
+
+div#coldivisions.col-md-5{
+  padding:30px;
+}
+
+
+.brandlogo
+{
+  height: 32px;
+  width: auto;
+  margin-top: -7px;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+  width: 300px;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  background-color: #18BC9C;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: white;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: orange;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.pr_list{
+  width:180px;
+  height:220px;
+  float:left;
+  padding:2px;
+  margin:2px;
+  border:1px solid #CCCCCC;
+   }
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
